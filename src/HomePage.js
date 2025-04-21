@@ -62,6 +62,9 @@ export default function HomePage() {
           <span className="text-lg sm:text-xl mt-1">紧急</span>
         </div>
       </div>
+
+      {/* 当前版本显示 */}
+      <div className="text-center text-sm text-gray-400 mt-4">版本号：v1.2</div>
     </div>
   );
 }
