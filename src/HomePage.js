@@ -35,7 +35,7 @@ export default function HomePage() {
         <img
           src={catImage}
           alt="等一下猫咪"
-          className="w-40 h-40 mx-auto cursor-pointer"
+          className="w-32 sm:w-40 md:w-48 lg:w-56 h-auto mx-auto cursor-pointer"
           onClick={handleCatClick}
         />
         <div className="mt-4 text-lg text-[#4e4e4e] bg-white px-4 py-2 rounded-2xl shadow max-w-xs mx-auto">
