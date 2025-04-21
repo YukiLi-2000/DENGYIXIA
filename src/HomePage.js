@@ -26,39 +26,39 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-[#fdf6f0] flex flex-col justify-between px-4 py-12">
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
         <img
           src={catImage}
           alt="等一下猫咪"
-          className="w-32 sm:w-40 md:w-48 h-auto cursor-pointer"
+          className="w-24 sm:w-28 md:w-32 h-auto cursor-pointer"
           onClick={handleCatClick}
         />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="bg-white px-6 py-4 rounded-2xl shadow text-lg text-[#4e4e4e] max-w-xs text-center"
+          className="bg-white px-6 py-4 rounded-2xl shadow text-lg sm:text-xl text-[#4e4e4e] max-w-xs text-center"
         >
           {currentLine}
         </motion.div>
       </div>
 
       {/* 底部导航栏 */}
-      <div className="mt-12 flex justify-around items-center bg-white rounded-t-2xl shadow-inner py-4 text-[#6b4c4c] text-sm">
+      <div className="mt-12 flex justify-around items-center bg-white rounded-t-2xl shadow-inner py-4 text-[#6b4c4c] text-lg">
         <div className="flex flex-col items-center">
-          <span className="text-xl">📋</span>
+          <span className="text-2xl">📋</span>
           <span>任务</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="text-xl">📝</span>
+          <span className="text-2xl">📝</span>
           <span>记录</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="text-xl">😊</span>
+          <span className="text-2xl">😊</span>
           <span>陪伴</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="text-xl">⚠️</span>
+          <span className="text-2xl">⚠️</span>
           <span>紧急</span>
         </div>
       </div>
