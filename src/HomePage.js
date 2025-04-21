@@ -25,33 +25,43 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#fdf6f0] flex flex-col items-center justify-center text-center px-4">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="mb-6"
-      >
+    <div className="min-h-screen bg-[#fdf6f0] flex flex-col justify-between px-4 py-12">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
         <img
           src={catImage}
           alt="等一下猫咪"
-          style={{
-            width: "80%",
-            maxWidth: "240px",
-            height: "auto",
-            cursor: "pointer",
-            display: "block",
-            margin: "0 auto"
-          }}
+          className="w-32 sm:w-40 md:w-48 h-auto cursor-pointer"
           onClick={handleCatClick}
         />
-        <div className="mt-4 text-lg text-[#4e4e4e] bg-white px-4 py-2 rounded-2xl shadow max-w-xs mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="bg-white px-6 py-4 rounded-2xl shadow text-lg text-[#4e4e4e] max-w-xs text-center"
+        >
           {currentLine}
+        </motion.div>
+      </div>
+
+      {/* 底部导航栏 */}
+      <div className="mt-12 flex justify-around items-center bg-white rounded-t-2xl shadow-inner py-4 text-[#6b4c4c] text-sm">
+        <div className="flex flex-col items-center">
+          <span className="text-xl">📋</span>
+          <span>任务</span>
         </div>
-      </motion.div>
-      <button className="mt-6 bg-[#f7bfa0] hover:bg-[#f6a67e] text-white px-6 py-2 rounded-full shadow-lg transition duration-300">
-        我现在有冲动
-      </button>
+        <div className="flex flex-col items-center">
+          <span className="text-xl">📝</span>
+          <span>记录</span>
+        </div>
+        <div className="flex flex-col items-center">
+          <span className="text-xl">😊</span>
+          <span>陪伴</span>
+        </div>
+        <div className="flex flex-col items-center">
+          <span className="text-xl">⚠️</span>
+          <span>紧急</span>
+        </div>
+      </div>
     </div>
   );
 }
