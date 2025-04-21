@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+
 const catImage = process.env.PUBLIC_URL + "/cat.png";
 
 const catLines = [
@@ -32,7 +33,7 @@ export default function HomePage() {
         className="mb-6"
       >
         <img
-          src="/cat.png"
+          src={catImage}
           alt="等一下猫咪"
           className="w-40 h-40 mx-auto cursor-pointer"
           onClick={handleCatClick}
