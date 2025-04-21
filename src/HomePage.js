@@ -26,11 +26,11 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-[#fdf6f0] flex flex-col justify-between px-4 py-12">
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
         <img
           src={catImage}
           alt="等一下猫咪"
-          className="w-20 sm:w-24 md:w-28 h-auto cursor-pointer"
+          className="w-32 sm:w-36 md:w-40 lg:w-44 h-auto cursor-pointer"
           onClick={handleCatClick}
         />
         <motion.div
@@ -46,20 +46,20 @@ export default function HomePage() {
       {/* 底部导航栏 */}
       <div className="mt-12 flex justify-around items-center bg-white rounded-t-2xl shadow-inner py-4 text-[#6b4c4c] text-lg">
         <div className="flex flex-col items-center">
-          <span className="text-3xl">📋</span>
-          <span className="text-base sm:text-lg mt-1">任务</span>
+          <span className="text-4xl">📋</span>
+          <span className="text-lg sm:text-xl mt-1">任务</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="text-3xl">📝</span>
-          <span className="text-base sm:text-lg mt-1">记录</span>
+          <span className="text-4xl">📝</span>
+          <span className="text-lg sm:text-xl mt-1">记录</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="text-3xl">😊</span>
-          <span className="text-base sm:text-lg mt-1">陪伴</span>
+          <span className="text-4xl">😊</span>
+          <span className="text-lg sm:text-xl mt-1">陪伴</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="text-3xl">⚠️</span>
-          <span className="text-base sm:text-lg mt-1">紧急</span>
+          <span className="text-4xl">⚠️</span>
+          <span className="text-lg sm:text-xl mt-1">紧急</span>
         </div>
       </div>
     </div>
