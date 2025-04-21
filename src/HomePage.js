@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import catImage from "./cat.png";
+const catImage = process.env.PUBLIC_URL + "/cat.png";
 
 const catLines = [
   "我感觉你今天有点难过…",
